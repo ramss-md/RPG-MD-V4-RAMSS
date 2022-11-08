@@ -74,7 +74,7 @@ function start(file) {
         break
     }
   })
-  p.on('exit', (_, code) => {
+  p.on('exit', (_, ccode) => {
     isRunning = false
     console.error('[❗] Exited with code:', code)
     if (code === 0) return
